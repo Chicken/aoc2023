@@ -13,12 +13,11 @@ console.log(
     }).reduce((a, c) => {
         if (
             c.hands.every((h) =>
-                (!h.red || h.red <= maxRed) && (!h.green || h.green <= maxGreen) && (!h.blue || h.blue <= maxBlue)
+                (!h.red || h.red <= maxRed) &&
+                (!h.green || h.green <= maxGreen) &&
+                (!h.blue || h.blue <= maxBlue)
             )
-        ) {
-            return a + c.id;
-        } else {
-            return a;
-        }
+        ) return a + c.id;
+        else return a;
     }, 0),
 );
