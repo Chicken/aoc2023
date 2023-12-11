@@ -75,7 +75,7 @@ for (let r = 0; r < lines.length; r++) {
             // possible corner pairs are LJ, F7, L7 and FJ
             // the first two LJ and F7 do nothing as they look like
             //       ┃ ┃
-            //.┏━┓ . ┗━┛ . 
+            //.┏━┓ . ┗━┛ .
             // ┃ ┃
             // the status is same in all the dots
             // the other two L7 and FJ look like
